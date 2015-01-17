@@ -65,8 +65,8 @@ Show your command history | `history`
 Open the user manual for a command | `man foo`
 Write the output of a program to a file | `java HelloWorld > foo`
 Write the output of a program to a file, appending to the end of the specified file | `java HelloWorld >> foo`
-Use the contents of a file as the input to a program | `java HelloMe < input`
-Use the contents of a file as the input to a program, and write its output to a file | `java HelloMe < input > output`
+Use the contents of a file as the input to a program | `java Hello < input`
+Use the contents of a file as the input to a program, and write its output to a file | `java Hello < input > output`
 Run the shell commands listed in the specified text file | `bash foo`
 Bring the most recent &ldquo;backgrounded&rdquo; program back to the foreground | `fg`
 
@@ -132,20 +132,20 @@ hello world
 Many programs accept input from the keyboard (ie. `stdin`):
 
 ```shell
-$ javac HelloMe.java
-$ java HelloMe
+$ javac Hello.java
+$ java Hello
 foo
 hello foo
 ```
 
-(Here, [HelloMe](https://gist.github.com/yuanqing/b50245bc0fa8d97f867c) is a toy Java program that accepts a string, then outputs <code>hello&nbsp;</code> followed by the string that was entered.)
+(Here, [Hello](https://gist.github.com/yuanqing/b50245bc0fa8d97f867c) is a toy Java program that accepts a string, then outputs <code>hello&nbsp;</code> followed by the string that was entered.)
 
 We can use the contents of a file as the input to a program via the `<` operator:
 
 ```shell
 $ cat input
 foo
-$ java HelloMe < input
+$ java Hello < input
 hello foo
 ```
 
@@ -154,10 +154,10 @@ hello foo
 We can redirect both input and output in a single command:
 
 ```shell
-$ javac HelloMe.java
+$ javac Hello.java
 $ cat input
 foo
-$ java HelloMe < input > output
+$ java Hello < input > output
 $ cat output
 hello foo
 ```
@@ -169,9 +169,9 @@ A shell script is simply a sequence of commands listed in a text file.
 Suppose we have a text file named `commands` containing the following:
 
 ```shell
-javac HelloMe.java
+javac Hello.java
 cat input
-java HelloMe < input > output
+java Hello < input > output
 cat output
 ```
 
@@ -188,10 +188,10 @@ hello foo
 If you&rsquo;d pressed `<Ctrl>` + `z` while a program was still running, you would see something like the following:
 
 ```shell
-$ javac HelloMe.java
-$ java HelloMe
+$ javac Hello.java
+$ java Hello
 ^Z
-[1]+  Stopped                 java HelloMe
+[1]+  Stopped                 java Hello
 ```
 
 A quick fix is to issue the `fg` command:
