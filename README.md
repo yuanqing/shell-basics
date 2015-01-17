@@ -12,7 +12,7 @@
 
 ## Introduction
 
-The Unix shell (or command line) is a program that allows us to run other programs via a text interface.
+The Unix shell (or *terminal*, or *command line*) is a program that allows us to run other programs via a text interface.
 
 ### Running a program
 
@@ -68,6 +68,7 @@ Write the output of a program to a file, appending to the end of the specified f
 Use the contents of a file as the input to a program | `java HelloMe < input`
 Use the contents of a file as the input to a program, and write its output to a file | `java HelloMe < input > output`
 Run the shell commands listed in the specified text file | `bash foo`
+Bring the most recent &ldquo;backgrounded&rdquo; program back to the foreground | `fg`
 
 Before hitting `<Enter>`, you can:
 
@@ -201,7 +202,7 @@ $ fg
 
 This brings us back to our running program, and all is well with the world.
 
-(Explanation: Pressing `<Ctrl>` + `z` places the currently running program in the background. The `fg` program simply brings the most recent &ldquo;backgrounded&rdquo; program back to the foreground.)
+(Explanation: Pressing `<Ctrl>` + `z` places the currently-running program in the background. The `fg` program simply brings the most recent &ldquo;backgrounded&rdquo; program back to the foreground.)
 
 ## See also
 
