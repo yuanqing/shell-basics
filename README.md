@@ -67,7 +67,7 @@ Write the output of a program to a file | `java HelloWorld > foo`
 Write the output of a program to a file, appending to the end of the specified file | `java HelloWorld >> foo`
 Use the contents of a file as the input to a program | `java Hello < input`
 Use the contents of a file as the input to a program, and write its output to a file | `java Hello < input > output`
-Run the shell commands listed in the specified text file | `bash foo`
+Run the shell commands listed in the specified text file | `sh foo`
 Bring the most recent &ldquo;backgrounded&rdquo; program back to the foreground | `fg`
 
 Before hitting `<Enter>`, you can:
@@ -175,10 +175,10 @@ java Hello < input > output
 cat output
 ```
 
-We can run the commands listed in the `commands` text file using the `bash` program:
+We can run the commands listed in the `commands` text file using the `sh` program:
 
 ```shell
-$ bash commands
+$ sh commands
 foo
 hello foo
 ```
