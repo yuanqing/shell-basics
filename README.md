@@ -57,7 +57,7 @@ Copy a file | `cp foo bar`
 Copy a file to the specified path to the current directory | `cp ~/foo/bar .`
 Copy a directory | `cp -r foo bar/`
 Delete a file | `rm foo`
-Delete a directory | `rmdir foo`
+Delete a directory | `rm -rf foo`
 Move/rename a file/directory | `mv foo bar`
 Compare the contents of two files | `diff foo bar`
 Clear the terminal screen | `clear`
