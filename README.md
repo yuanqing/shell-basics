@@ -54,7 +54,7 @@ Create an empty file | `touch foo`
 Create a file containing the specified string | `echo 'foo' > bar`
 Create an empty directory | `mkdir foo`
 Copy a file | `cp foo bar`
-Copy a file to the specified path to the current directory | `cp ~/foo/bar .`
+Copy a file at the specified path to the current directory | `cp ~/foo/bar .`
 Copy a directory | `cp -r foo bar/`
 Delete a file | `rm foo`
 Delete a directory | `rm -rf foo`
