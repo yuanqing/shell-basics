@@ -18,7 +18,7 @@ The Unix shell (or *terminal*, or *command line*) is a program that allows us to
 
 To run a program, type its name and hit `<Enter>`. For example, the `pwd` program is for printing the path of the current directory.
 
-```sh
+```
 $ pwd
 /home/y/yuanqing
 ```
@@ -29,7 +29,7 @@ $ pwd
 
 Some programs accept arguments, which come after the name of the program. For example, the `cd` program is for changing the current directory:
 
-```sh
+```
 $ cd foo
 $ pwd
 /home/y/yuanqing/foo
@@ -101,7 +101,7 @@ A file/directory in the root directory | `/foo`
 
 The output of a program is typically displayed on the terminal (ie. `stdout`):
 
-```sh
+```
 $ javac HelloWorld.java
 $ java HelloWorld
 hello world
@@ -109,7 +109,7 @@ hello world
 
 Use the `>` operator to write the program&rsquo;s output to a file:
 
-```sh
+```
 $ java HelloWorld > foo
 $ cat foo
 hello world
@@ -117,7 +117,7 @@ hello world
 
 If you use the `>` operator, the specified file will be *overwritten*, so be careful! To merely *append* the output to the end of the specified file, use the `>>` operator instead:
 
-```sh
+```
 $ java HelloWorld >> bar
 $ cat bar
 hello world
@@ -131,7 +131,7 @@ hello world
 
 Many programs accept input from the keyboard (ie. `stdin`):
 
-```sh
+```
 $ javac Hello.java
 $ java Hello
 foo
@@ -142,7 +142,7 @@ hello foo
 
 We can use the contents of a file as the input to a program via the `<` operator:
 
-```sh
+```
 $ cat input
 foo
 $ java Hello < input
@@ -153,7 +153,7 @@ hello foo
 
 We can redirect both input and output in a single command:
 
-```sh
+```
 $ javac Hello.java
 $ cat input
 foo
@@ -168,7 +168,7 @@ A shell script is simply a sequence of commands listed in a text file.
 
 Suppose we have a text file named `commands` containing the following:
 
-```sh
+```
 javac Hello.java
 cat input
 java Hello < input > output
@@ -177,7 +177,7 @@ cat output
 
 We can run the commands listed in the `commands` text file using the `sh` program:
 
-```sh
+```
 $ sh commands
 foo
 hello foo
@@ -187,7 +187,7 @@ hello foo
 
 If you&rsquo;d pressed `<Ctrl>` + `z` while a program was still running, you would see something like the following:
 
-```sh
+```
 $ javac Hello.java
 $ java Hello
 ^Z
@@ -196,7 +196,7 @@ $ java Hello
 
 A quick fix is to run the `fg` program:
 
-```sh
+```
 $ fg
 ```
 
