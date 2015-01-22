@@ -194,7 +194,7 @@ $ java Hello
 [1]+  Stopped                 java Hello
 ```
 
-A quick fix is to issue the `fg` command:
+A quick fix is to run the `fg` program:
 
 ```sh
 $ fg
@@ -202,7 +202,7 @@ $ fg
 
 This brings us back to our running program, and all is well with the world.
 
-(Explanation: Pressing `<Ctrl>` + `z` places the currently-running program in the background. The `fg` program simply brings the most recent &ldquo;backgrounded&rdquo; program back to the foreground.)
+(Explanation: Pressing `<Ctrl>` + `z` [places the currently-running program in the background](http://en.wikibooks.org/wiki/A_Quick_Introduction_to_Unix/Job_Control#Controlling_Jobs_in_Unix). The `fg` program simply brings the most recent &ldquo;backgrounded&rdquo; program back to the foreground.)
 
 ## See also
 
