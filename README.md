@@ -206,6 +206,6 @@ This brings us back to our running program, and all is well with the world.
 
 ## See also
 
-- [Vim Basics](https://github.com/yuanqing/vim-basics)
+- [Vim Basics](https://github.com/yuanqing/vim-basics/blob/master/README.md)
 - [Unix Workshop](https://github.com/cyberwizardinstitute/workshops/blob/master/unix.markdown)
 - [The Unix Philosophy](http://www.faqs.org/docs/artu/ch01s06.html)
