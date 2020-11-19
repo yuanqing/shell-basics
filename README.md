@@ -1,13 +1,13 @@
-# Unix Basics
+# Shell Basics
 
-> A quick overview of the Unix shell.
+> A quick overview of the Unix shell
 
 - [Introduction](#introduction)
 - [Commands](#commands)
 - [Paths](#paths)
 - [I/O redirection](#io-redirection)
 - [Shell scripts](#shell-scripts)
-- [The `<Ctrl>` + `z` &ldquo;problem&rdquo;](#the-ctrl--z-problem)
+- [The `<Ctrl>` + `z` “problem”](#the-ctrl--z-problem)
 - [See also](#see-also)
 
 ## Introduction
@@ -68,7 +68,7 @@ Write the output of a program to a file, appending to the end of the specified f
 Use the contents of a file as the input to a program | `java Hello < input`
 Use the contents of a file as the input to a program, and write its output to a file | `java Hello < input > output`
 Run the shell commands listed in the specified text file | `bash foo`
-Bring the most recent &ldquo;backgrounded&rdquo; program back to the foreground | `fg`
+Bring the most recent “backgrounded” program back to the foreground | `fg`
 
 Before hitting `<Enter>`, you can:
 
@@ -76,7 +76,7 @@ Before hitting `<Enter>`, you can:
 2. Use the <code>&uarr;</code> and <code>&darr;</code> arrow keys to toggle through your command history.
 3. Use the `<Tab>` key to autocomplete commands.
 
-To terminate a running program, press `<Ctrl>` + `d`. (See [the `<Ctrl>` + `z` &ldquo;problem&rdquo;](#the-ctrl--z-problem).)
+To terminate a running program, press `<Ctrl>` + `d`. (See [the `<Ctrl>` + `z` “problem”](#the-ctrl--z-problem).)
 
 ## Paths
 
@@ -183,7 +183,7 @@ foo
 hello foo
 ```
 
-## The `<Ctrl>` + `z` &ldquo;problem&rdquo;
+## The `<Ctrl>` + `z` “problem”
 
 If you&rsquo;d pressed `<Ctrl>` + `z` while a program was still running, you would see something like the following:
 
@@ -202,10 +202,10 @@ $ fg
 
 This brings us back to our running program, and all is well with the world.
 
-(Explanation: Pressing `<Ctrl>` + `z` [places the currently-running program in the background](http://en.wikibooks.org/wiki/A_Quick_Introduction_to_Unix/Job_Control#Controlling_Jobs_in_Unix). The `fg` program simply brings the most recent &ldquo;backgrounded&rdquo; program back to the foreground.)
+(Explanation: Pressing `<Ctrl>` + `z` [places the currently-running program in the background](http://en.wikibooks.org/wiki/A_Quick_Introduction_to_Unix/Job_Control#Controlling_Jobs_in_Unix). The `fg` program simply brings the most recent “backgrounded” program back to the foreground.)
 
 ## See also
 
-- [Vim Basics](https://github.com/yuanqing/vim-basics/blob/master/README.md)
-- [Unix Workshop](https://github.com/cyberwizardinstitute/workshops/blob/master/unix.md)
+- [Vim Basics](https://github.com/yuanqing/vim-basics/blob/master/README.md#readme)
+- [Unix Workshop](https://github.com/cyberwizardinstitute/workshops/blob/master/unix.md#readme)
 - [The Unix Philosophy](http://www.faqs.org/docs/artu/ch01s06.html)
